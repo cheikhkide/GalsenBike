@@ -402,34 +402,31 @@
                         </div>
                     </div>
                 </div>
-
+ 
                 <div class="md:w-1/2">
-                    <form class="bg-gray-900 p-8 rounded-lg">
+                    <form id="contactForm" method="POST" action="./php/formulaire.php" class="bg-gray-900 p-8 rounded-lg">
                         <h3 class="text-xl font-bold mb-6 text-yellow-400">Envoyez-nous un message</h3>
 
                         <div class="mb-4">
                             <label for="name" class="block text-gray-300 mb-2">Nom complet</label>
-                            <input type="text" id="name"
+                            <input type="text" id="name" name="name" required
                                 class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
                         </div>
 
                         <div class="mb-4">
                             <label for="email" class="block text-gray-300 mb-2">Email</label>
-                            <input type="email" id="email"
+                            <input type="email" id="email" name="email" required
                                 class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
                         </div>
 
 
                         <div class="mb-6">
                             <label for="message" class="block text-gray-300 mb-2">Message</label>
-                            <textarea id="message" rows="5"
+                            <textarea id="message" name="message" rows="5" required
                                 class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
                         </div>
                      <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition mx-auto block">
-                        <a
-                            href="mailto:cheikhkide2002@gmail.com?subject=Réservation%20d'un%20vélo&body=bonjour,%20veillez%20nous%20dire%20la%20date%20de%20location%20et%20le%20type%20de%20vélo%20que%20vous%20voulez%20réserver.">
-                            Envoyer
-                        </a>
+                        Envoyer
                     </button>
                     </form>
                 </div>
